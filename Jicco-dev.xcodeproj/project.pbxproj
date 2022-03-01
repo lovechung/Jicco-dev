@@ -11,6 +11,19 @@
 		8412958E27CE88B50059F068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412958D27CE88B50059F068 /* ContentView.swift */; };
 		8412959027CE88B70059F068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8412958F27CE88B70059F068 /* Assets.xcassets */; };
 		8412959327CE88B70059F068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8412959227CE88B70059F068 /* Preview Assets.xcassets */; };
+		8412959B27CE89080059F068 /* Get in Frameworks */ = {isa = PBXBuildFile; productRef = 8412959A27CE89080059F068 /* Get */; };
+		8412959E27CE89790059F068 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8412959D27CE89790059F068 /* Kingfisher */; };
+		841295A127CE89B00059F068 /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295A027CE89B00059F068 /* DefaultValue.swift */; };
+		841295A427CE89D50059F068 /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295A327CE89D50059F068 /* PostApi.swift */; };
+		841295A627CE89E90059F068 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295A527CE89E90059F068 /* NetworkManager.swift */; };
+		841295A927CE8A030059F068 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295A827CE8A030059F068 /* Post.swift */; };
+		841295AC27CE8A2B0059F068 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295AB27CE8A2B0059F068 /* PostData.swift */; };
+		841295AF27CE8A450059F068 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295AE27CE8A450059F068 /* PostList.swift */; };
+		841295B127CE8A5D0059F068 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295B027CE8A5D0059F068 /* PostCell.swift */; };
+		841295B327CE8A8A0059F068 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295B227CE8A8A0059F068 /* PostImageCell.swift */; };
+		841295B527CE8AC80059F068 /* PostToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295B427CE8AC80059F068 /* PostToolbarButton.swift */; };
+		841295B727CE8ADE0059F068 /* VIPBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295B627CE8ADE0059F068 /* VIPBadge.swift */; };
+		841295B927CE8AF10059F068 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841295B827CE8AF10059F068 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +32,17 @@
 		8412958D27CE88B50059F068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8412958F27CE88B70059F068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8412959227CE88B70059F068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		841295A027CE89B00059F068 /* DefaultValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValue.swift; sourceTree = "<group>"; };
+		841295A327CE89D50059F068 /* PostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
+		841295A527CE89E90059F068 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		841295A827CE8A030059F068 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		841295AB27CE8A2B0059F068 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		841295AE27CE8A450059F068 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
+		841295B027CE8A5D0059F068 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		841295B227CE8A8A0059F068 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		841295B427CE8AC80059F068 /* PostToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostToolbarButton.swift; sourceTree = "<group>"; };
+		841295B627CE8ADE0059F068 /* VIPBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPBadge.swift; sourceTree = "<group>"; };
+		841295B827CE8AF10059F068 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8412959E27CE89790059F068 /* Kingfisher in Frameworks */,
+				8412959B27CE89080059F068 /* Get in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +77,11 @@
 		8412958A27CE88B50059F068 /* Jicco-dev */ = {
 			isa = PBXGroup;
 			children = (
+				8412959F27CE89A20059F068 /* Custom */,
+				841295A227CE89BF0059F068 /* Api */,
+				841295A727CE89F30059F068 /* Model */,
+				841295AA27CE8A170059F068 /* Store */,
+				841295AD27CE8A390059F068 /* View */,
 				8412958B27CE88B50059F068 /* Jicco_devApp.swift */,
 				8412958D27CE88B50059F068 /* ContentView.swift */,
 				8412958F27CE88B70059F068 /* Assets.xcassets */,
@@ -65,6 +96,52 @@
 				8412959227CE88B70059F068 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8412959F27CE89A20059F068 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				841295A027CE89B00059F068 /* DefaultValue.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		841295A227CE89BF0059F068 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				841295A327CE89D50059F068 /* PostApi.swift */,
+				841295A527CE89E90059F068 /* NetworkManager.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		841295A727CE89F30059F068 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				841295A827CE8A030059F068 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		841295AA27CE8A170059F068 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				841295AB27CE8A2B0059F068 /* PostData.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		841295AD27CE8A390059F068 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				841295AE27CE8A450059F068 /* PostList.swift */,
+				841295B027CE8A5D0059F068 /* PostCell.swift */,
+				841295B227CE8A8A0059F068 /* PostImageCell.swift */,
+				841295B427CE8AC80059F068 /* PostToolbarButton.swift */,
+				841295B627CE8ADE0059F068 /* VIPBadge.swift */,
+				841295B827CE8AF10059F068 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +160,10 @@
 			dependencies = (
 			);
 			name = "Jicco-dev";
+			packageProductDependencies = (
+				8412959A27CE89080059F068 /* Get */,
+				8412959D27CE89790059F068 /* Kingfisher */,
+			);
 			productName = "Jicco-dev";
 			productReference = 8412958827CE88B50059F068 /* Jicco-dev.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +192,10 @@
 				Base,
 			);
 			mainGroup = 8412957F27CE88B50059F068;
+			packageReferences = (
+				8412959927CE89080059F068 /* XCRemoteSwiftPackageReference "Get" */,
+				8412959C27CE89790059F068 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8412958927CE88B50059F068 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +222,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841295A427CE89D50059F068 /* PostApi.swift in Sources */,
 				8412958E27CE88B50059F068 /* ContentView.swift in Sources */,
+				841295A627CE89E90059F068 /* NetworkManager.swift in Sources */,
+				841295B727CE8ADE0059F068 /* VIPBadge.swift in Sources */,
+				841295B327CE8A8A0059F068 /* PostImageCell.swift in Sources */,
+				841295B527CE8AC80059F068 /* PostToolbarButton.swift in Sources */,
+				841295B927CE8AF10059F068 /* Home.swift in Sources */,
+				841295AF27CE8A450059F068 /* PostList.swift in Sources */,
+				841295A927CE8A030059F068 /* Post.swift in Sources */,
+				841295B127CE8A5D0059F068 /* PostCell.swift in Sources */,
+				841295A127CE89B00059F068 /* DefaultValue.swift in Sources */,
+				841295AC27CE8A2B0059F068 /* PostData.swift in Sources */,
 				8412958C27CE88B50059F068 /* Jicco_devApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +437,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8412959927CE89080059F068 /* XCRemoteSwiftPackageReference "Get" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Get.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.0;
+			};
+		};
+		8412959C27CE89790059F068 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8412959A27CE89080059F068 /* Get */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8412959927CE89080059F068 /* XCRemoteSwiftPackageReference "Get" */;
+			productName = Get;
+		};
+		8412959D27CE89790059F068 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8412959C27CE89790059F068 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8412958027CE88B50059F068 /* Project object */;
 }
