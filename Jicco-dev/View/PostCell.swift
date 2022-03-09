@@ -54,6 +54,7 @@ struct PostCell: View {
             
             Text(post.content)
                 .font(.system(size: 17))
+                .lineLimit(4)
             
             if !post.images.isEmpty {
                 PostImageCell(images: post.images, width: screenBounds.width - 30)

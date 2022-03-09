@@ -19,21 +19,21 @@ struct PostImageCell: View {
             if images.count == 1 {
                 PostImageCellSingle(image: images[0], width: width)
             } else if images.count == 2 {
-                PostImageCellMulti(images: images, width: width)
+                PostImageCellMulti(images: images, width: width / 1.5)
             } else if images.count == 3 {
                 PostImageCellMulti(images: images, width: width)
             } else if images.count == 4 {
-                VStack(alignment: .center, spacing: imageSpace) {
-                    PostImageCellMulti(images: Array(images[0...1]), width: width)
-                    PostImageCellMulti(images: Array(images[2...3]), width: width)
+                VStack(alignment: .leading, spacing: imageSpace) {
+                    PostImageCellMulti(images: Array(images[0...1]), width: width / 1.5)
+                    PostImageCellMulti(images: Array(images[2...3]), width: width / 1.5)
                 }
             } else if images.count == 5 {
-                VStack(alignment: .center, spacing: imageSpace) {
-                    PostImageCellMulti(images: Array(images[0...1]), width: width)
-                    PostImageCellMulti(images: Array(images[2...4]), width: width)
+                VStack(alignment: .leading, spacing: imageSpace) {
+                    PostImageCellMulti(images: Array(images[0...2]), width: width)
+                    PostImageCellMulti(images: Array(images[3...4]), width: width / 1.5)
                 }
             } else if images.count == 6 {
-                VStack(alignment: .center, spacing: imageSpace) {
+                VStack(alignment: .leading, spacing: imageSpace) {
                     PostImageCellMulti(images: Array(images[0...2]), width: width)
                     PostImageCellMulti(images: Array(images[3...5]), width: width)
                 }
@@ -63,6 +63,8 @@ struct PostImageCell: View {
 struct PostImageCellSingle: View {
     let image: PostImage
     let width: CGFloat
+    
+    
     
     var body: some View {
         var imageWidth: CGFloat = CGFloat(image.width)
@@ -124,6 +126,6 @@ struct PostImageCell_Previews: PreviewProvider {
             PostImageCell(images: Array(images[0...6]), width: width)
             PostImageCell(images: Array(images[0...7]), width: width)
         }
-        .previewLayout(.fixed(width: width, height: 300))
+        .previewLayout(.fixed(width: width, height: 450))
     }
 }
