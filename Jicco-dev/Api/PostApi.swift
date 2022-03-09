@@ -11,14 +11,20 @@ import Get
 enum PostApi {}
 
 extension PostApi {
-    public static var post: PostResource { PostResource() }
+    public static var post: PostResource {
+        PostResource()
+    }
     
     public struct PostResource {
-        public let path: String = "/post/page/personal"
+        public let path: String = "/post"
         
-        public func get(_ cursor: Int, _ size: Int) -> Request<Res<PostRes>> {
+        public func list(_ cursor: Int, _ size: Int) -> Request<Res<PostRes>> {
             let params = [("cursor", String(cursor)), ("size", String(size))]
-            return .get(path, query: params)
+            return .get(path + "/page/personal", query: params)
+        }
+        
+        public func get(_ id: Int) -> Request<Res<Post>> {
+            return .get(path + "/info/\(id)")
         }
     }
 }

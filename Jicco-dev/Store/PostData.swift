@@ -14,7 +14,7 @@ class PostData: ObservableObject {
     
     @MainActor
     func getList(cursor: Int, pageSize: Int, _ reload: Bool) async {
-        let data = await request(PostApi.post.get(reload ? 0 : cursor, pageSize))
+        let data = await request(PostApi.post.list(reload ? 0 : cursor, pageSize))
         last = data.last
         if reload {
             list = data.list
@@ -24,3 +24,21 @@ class PostData: ObservableObject {
     }
     
 }
+
+extension PostData {
+    static let testData: PostRes = {
+        return loadTestData("PostListData.json")
+    }()
+    
+    static let testDataImage: [PostImage] = {
+        return loadTestData("PostImageData.json")
+    }()
+}
+
+func loadTestData<T: Decodable>(_ fileName: String) -> T {
+    let url = Bundle.main.url(forResource: fileName, withExtension: nil)
+    let data = try? Data(contentsOf: url!)
+    let result = try? JSONDecoder().decode(T.self, from: data!)
+    return result!
+}
+

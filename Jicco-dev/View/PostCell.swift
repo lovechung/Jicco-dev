@@ -56,7 +56,7 @@ struct PostCell: View {
                 .font(.system(size: 17))
             
             if !post.images.isEmpty {
-                PostImageCell(images: post.images, width: UIScreen.main.bounds.width - 30)
+                PostImageCell(images: post.images, width: screenBounds.width - 30)
             }
             
             Divider()
@@ -90,6 +90,7 @@ struct PostCell: View {
 
 struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
-        PostCell(post: PostData().list[0])
+        let postRes = PostData.testData
+        return PostCell(post: postRes.list[1])
     }
 }
