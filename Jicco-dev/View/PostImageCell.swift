@@ -27,33 +27,10 @@ struct PostImageCell: View {
                     PostImageCellMulti(images: Array(images[0...1]), width: width / 1.5)
                     PostImageCellMulti(images: Array(images[2...3]), width: width / 1.5)
                 }
-            } else if images.count == 5 {
+            } else if images.count > 4 {
                 VStack(alignment: .leading, spacing: imageSpace) {
                     PostImageCellMulti(images: Array(images[0...2]), width: width)
                     PostImageCellMulti(images: Array(images[3...4]), width: width / 1.5)
-                }
-            } else if images.count == 6 {
-                VStack(alignment: .leading, spacing: imageSpace) {
-                    PostImageCellMulti(images: Array(images[0...2]), width: width)
-                    PostImageCellMulti(images: Array(images[3...5]), width: width)
-                }
-            } else if images.count == 7 {
-                VStack(alignment: .leading, spacing: imageSpace) {
-                    PostImageCellMulti(images: Array(images[0...2]), width: width)
-                    PostImageCellMulti(images: Array(images[3...5]), width: width)
-                    PostImageCellMulti(images: Array(images[6...6]), width: width / 3)
-                }
-            } else if images.count == 8 {
-                VStack(alignment: .leading, spacing: imageSpace) {
-                    PostImageCellMulti(images: Array(images[0...2]), width: width)
-                    PostImageCellMulti(images: Array(images[3...5]), width: width)
-                    PostImageCellMulti(images: Array(images[6...7]), width: width / 1.5)
-                }
-            } else if images.count == 9 {
-                VStack(alignment: .leading, spacing: imageSpace) {
-                    PostImageCellMulti(images: Array(images[0...2]), width: width)
-                    PostImageCellMulti(images: Array(images[3...5]), width: width)
-                    PostImageCellMulti(images: Array(images[6...8]), width: width)
                 }
             }
         }
@@ -64,13 +41,11 @@ struct PostImageCellSingle: View {
     let image: PostImage
     let width: CGFloat
     
-    
-    
     var body: some View {
         var imageWidth: CGFloat = CGFloat(image.width)
         var imageHeight: CGFloat = CGFloat(image.height)
         let maxWidth: CGFloat = self.width
-        let maxHeight: CGFloat = 300
+        let maxHeight: CGFloat = 250
         
         if imageWidth > imageHeight {
             if imageWidth > maxWidth {

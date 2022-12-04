@@ -10,7 +10,8 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         VStack {
-            PostList().environmentObject(PostData())
+//            PostList().environmentObject(PostData())
+            UserList().environmentObject(UserData())
         }
     }
 }
